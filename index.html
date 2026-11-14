@@ -9,144 +9,222 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Menghubungkan ke file style.css -->
+    <!-- Menghubungkan file style.css -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-[#0b0b0b] text-gray-100 selection:bg-red-600 selection:text-white">
 
-    <!-- Navbar -->
-    <header class="fixed top-0 left-0 w-full z-50 bg-[#0b0b0b]/80 backdrop-blur-md border-b border-red-900/30">
+    <!-- Header / Navbar -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-[#0b0b0b]/85 backdrop-blur-md border-b border-red-900/30">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-            <a href="#" class="font-heading text-3xl font-bold tracking-wider text-red-500 uppercase">ONI PORTFOLIO</a>
+            <a href="#hero" class="font-heading text-3xl font-bold tracking-wider text-red-500 uppercase">&lt;Marcell<span>.dev</span>/&gt;</a>
             <nav class="hidden md:flex gap-8 text-sm font-semibold uppercase tracking-wider text-gray-300">
-                <a href="#home" class="hover:text-red-500 transition">Home</a>
-                <a href="#about" class="hover:text-red-500 transition">About Me</a>
-                <a href="#projects" class="hover:text-red-500 transition">Collection</a>
-                <a href="#contact" class="hover:text-red-500 transition">Contact</a>
+                <a href="#about" class="hover:text-red-500 transition">Tentang</a>
+                <a href="#skills" class="hover:text-red-500 transition">Keahlian</a>
+                <a href="#projects" class="hover:text-red-500 transition">Proyek</a>
+                <a href="#education" class="hover:text-red-500 transition">Pendidikan</a>
+                <a href="#contact" class="hover:text-red-500 transition">Kontak</a>
             </nav>
+            <div>
+                <a href="#contact" class="px-4 py-2 bg-red-700 hover:bg-red-600 text-white text-xs font-bold uppercase tracking-wider rounded transition shadow-md shadow-red-900/40">Hubungi Saya</a>
+            </div>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="relative pt-32 pb-20 md:pt-44 md:pb-32 overflow-hidden border-b border-red-950/50">
-        <div class="absolute inset-0 bg-gradient-to-b from-red-950/20 via-transparent to-[#0b0b0b] pointer-events-none"></div>
-        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
-            <div>
-                <span class="inline-block py-1 px-3 rounded bg-red-950/80 border border-red-700/50 text-red-400 text-xs font-bold tracking-widest uppercase mb-4">Informatics Engineering Student</span>
-                <h1 class="font-heading text-6xl md:text-8xl font-bold uppercase leading-none text-white tracking-wide">
-                    DEMON <span class="text-red-600">AWAKEN</span>
-                </h1>
-                <p class="mt-6 text-gray-400 max-w-lg leading-relaxed">
-                    Selamat datang di web portofolio pribadi saya. Berfokus pada pengembangan web, rekayasa perangkat lunak, dan eksplorasi desain digital dengan estetika yang kuat dan tajam.
-                </p>
-                <div class="mt-8 flex gap-4">
-                    <a href="#projects" class="px-8 py-3 bg-red-700 hover:bg-red-600 text-white font-bold uppercase tracking-wider rounded transition shadow-lg shadow-red-900/40">Explore Projects</a>
-                    <a href="#contact" class="px-8 py-3 border border-red-800/80 hover:bg-red-950/40 text-gray-300 font-bold uppercase tracking-wider rounded transition">Contact Me</a>
-                </div>
-            </div>
-            <div class="relative">
-                <div class="w-full h-80 md:h-[420px] rounded-2xl bg-gradient-to-br from-red-900/30 to-black border border-red-800/40 overflow-hidden shadow-2xl flex items-center justify-center relative group">
-                    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-red-900/40 via-transparent to-black"></div>
-                    <span class="font-heading text-4xl text-red-500/60 uppercase tracking-widest z-10">Visual Portfolio</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Me Section -->
-    <section id="about" class="py-24 bg-[#0d0d0d] relative">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="mb-16">
-                <h2 class="font-heading text-5xl md:text-6xl font-bold uppercase tracking-wider text-white">About <span class="text-red-600">Me</span></h2>
-                <div class="w-20 h-1 bg-red-600 mt-2"></div>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="p-6 rounded-xl bg-black border border-red-950 hover:border-red-600/50 transition">
-                    <span class="font-heading text-3xl text-red-500 block mb-2">01</span>
-                    <h3 class="font-bold text-lg text-white mb-2 uppercase">Background</h3>
-                    <p class="text-sm text-gray-400">Mahasiswa Teknik Informatika yang berdedikasi dalam membangun sistem web fungsional dan terstruktur.</p>
-                </div>
-                <div class="p-6 rounded-xl bg-black border border-red-950 hover:border-red-600/50 transition">
-                    <span class="font-heading text-3xl text-red-500 block mb-2">02</span>
-                    <h3 class="font-bold text-lg text-white mb-2 uppercase">Tech Stack</h3>
-                    <p class="text-sm text-gray-400">Berpengalaman menggunakan HTML, CSS, JavaScript, PHP, MySQL, serta Supabase untuk database.</p>
-                </div>
-                <div class="p-6 rounded-xl bg-black border border-red-950 hover:border-red-600/50 transition">
-                    <span class="font-heading text-3xl text-red-500 block mb-2">03</span>
-                    <h3 class="font-bold text-lg text-white mb-2 uppercase">Visual Standard</h3>
-                    <p class="text-sm text-gray-400">Memiliki standar estetika visual yang kuat, baik dalam tata letak antarmuka web maupun desain grafis.</p>
-                </div>
-                <div class="p-6 rounded-xl bg-black border border-red-950 hover:border-red-600/50 transition">
-                    <span class="font-heading text-3xl text-red-500 block mb-2">04</span>
-                    <h3 class="font-bold text-lg text-white mb-2 uppercase">Passion</h3>
-                    <p class="text-sm text-gray-400">Menyukai pemecahan masalah logika pemrograman serta eksplorasi teknologi web interaktif modern.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Collection Section -->
-    <section id="projects" class="py-24 bg-[#0b0b0b]">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="mb-16">
-                <h2 class="font-heading text-5xl md:text-6xl font-bold uppercase tracking-wider text-white">Our <span class="text-red-600">Collection</span></h2>
-                <div class="w-20 h-1 bg-red-600 mt-2"></div>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-[#121212] border border-red-950 rounded-xl overflow-hidden group hover:border-red-600/60 transition">
-                    <div class="h-48 bg-red-950/20 border-b border-red-950 flex items-center justify-center">
-                        <span class="font-heading text-2xl text-red-600/60">Project Alpha</span>
-                    </div>
-                    <div class="p-6">
-                        <span class="text-xs text-red-500 font-bold uppercase tracking-wider">Web App</span>
-                        <h3 class="font-bold text-xl text-white mt-1 mb-2">Sistem Informasi Sejarah Mobil</h3>
-                        <p class="text-gray-400 text-sm mb-4">Platform web interaktif untuk menampilkan sejarah kendaraan, pemutaran suara mesin, dan dashboard admin.</p>
-                        <a href="#" class="text-sm font-bold text-red-500 hover:text-red-400 uppercase tracking-wider inline-flex items-center gap-1">View Details &rarr;</a>
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="relative pt-36 pb-24 md:pt-48 md:pb-32 overflow-hidden border-b border-red-950/50">
+            <div class="absolute inset-0 bg-gradient-to-b from-red-950/20 via-transparent to-[#0b0b0b] pointer-events-none"></div>
+            <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
+                <div>
+                    <span class="inline-block py-1 px-3 rounded bg-red-950/80 border border-red-700/50 text-red-400 text-xs font-bold tracking-widest uppercase mb-4">Tersedia untuk Proyek & Kolaborasi</span>
+                    <h1 class="font-heading text-6xl md:text-8xl font-bold uppercase leading-none text-white tracking-wide">
+                        HALO, SAYA <span class="text-red-600 block">MARCELL FEBRIANO</span>
+                    </h1>
+                    <p class="mt-6 text-gray-400 max-w-lg leading-relaxed">
+                        Mahasiswa Teknik Informatika berbasis di Cirebon, Indonesia. Berfokus pada perancangan aplikasi web yang efisien, sistem terstruktur, dan eksplorasi desain digital yang tajam.
+                    </p>
+                    <div class="mt-8 flex flex-wrap gap-4">
+                        <a href="#contact" class="px-8 py-3 bg-red-700 hover:bg-red-600 text-white font-bold uppercase tracking-wider rounded transition shadow-lg shadow-red-900/40">Hubungi Saya</a>
+                        <a href="#projects" class="px-8 py-3 border border-red-800/80 hover:bg-red-950/40 text-gray-300 font-bold uppercase tracking-wider rounded transition">Lihat Koleksi Proyek</a>
                     </div>
                 </div>
-
-                <div class="bg-[#121212] border border-red-950 rounded-xl overflow-hidden group hover:border-red-600/60 transition">
-                    <div class="h-48 bg-red-950/20 border-b border-red-950 flex items-center justify-center">
-                        <span class="font-heading text-2xl text-red-600/60">Project Beta</span>
-                    </div>
-                    <div class="p-6">
-                        <span class="text-xs text-red-500 font-bold uppercase tracking-wider">Database / UI</span>
-                        <h3 class="font-bold text-xl text-white mt-1 mb-2">Academic Data Manager</h3>
-                        <p class="text-gray-400 text-sm mb-4">Sistem pengelolaan data absensi dan akademik kelas dengan struktur basis data yang terorganisir.</p>
-                        <a href="#" class="text-sm font-bold text-red-500 hover:text-red-400 uppercase tracking-wider inline-flex items-center gap-1">View Details &rarr;</a>
-                    </div>
-                </div>
-
-                <div class="bg-[#121212] border border-red-950 rounded-xl overflow-hidden group hover:border-red-600/60 transition">
-                    <div class="h-48 bg-red-950/20 border-b border-red-950 flex items-center justify-center">
-                        <span class="font-heading text-2xl text-red-600/60">Project Gamma</span>
-                    </div>
-                    <div class="p-6">
-                        <span class="text-xs text-red-500 font-bold uppercase tracking-wider">UI / UX Design</span>
-                        <h3 class="font-bold text-xl text-white mt-1 mb-2">Cyber-Theme Poster & Assets</h3>
-                        <p class="text-gray-400 text-sm mb-4">Koleksi desain poster akademik dan aset visual digital dengan standar grafis yang tajam.</p>
-                        <a href="#" class="text-sm font-bold text-red-500 hover:text-red-400 uppercase tracking-wider inline-flex items-center gap-1">View Details &rarr;</a>
+                <div class="relative flex justify-center">
+                    <div class="w-full max-w-md h-80 md:h-[420px] rounded-2xl bg-gradient-to-br from-red-900/30 to-black border border-red-800/40 overflow-hidden shadow-2xl flex items-center justify-center relative group">
+                        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-red-900/40 via-transparent to-black"></div>
+                        <span class="font-heading text-3xl text-red-500/60 uppercase tracking-widest z-10">Visual Portfolio Card</span>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-24 bg-[#0d0d0d] border-t border-red-950/50">
-        <div class="max-w-3xl mx-auto px-6 text-center">
-            <h2 class="font-heading text-5xl md:text-6xl font-bold uppercase tracking-wider text-white mb-4">Get In <span class="font-heading text-red-600">Touch</span></h2>
-            <p class="text-gray-400 mb-8">Tertarik berkolaborasi atau ingin mendiskusikan project menarik lainnya? Hubungi saya melalui tautan di bawah.</p>
-            <a href="mailto:emailmu@example.com" class="inline-block px-10 py-4 bg-red-700 hover:bg-red-600 text-white font-bold uppercase tracking-wider rounded transition shadow-lg shadow-red-900/40">Send an Email</a>
-        </div>
-    </section>
+        <!-- About Section -->
+        <section id="about" class="py-24 bg-[#0d0d0d] relative">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="mb-16">
+                    <span class="text-xs text-red-500 font-bold uppercase tracking-widest">Profil Diri</span>
+                    <h2 class="font-heading text-5xl md:text-6xl font-bold uppercase tracking-wider text-white mt-1">Tentang <span class="text-red-600">Saya</span></h2>
+                    <div class="w-20 h-1 bg-red-600 mt-2"></div>
+                </div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
+                    <div class="lg:col-span-2 space-y-4 text-gray-300 leading-relaxed text-sm md:text-base">
+                        <p>
+                            Saya adalah mahasiswa aktif di <strong>Universitas Muhammadiyah Cirebon</strong> jurusan <strong>S1 Teknik Informatika</strong> (Section TI24B). Memiliki ketertarikan besar pada pengembangan web full-stack, rekayasa perangkat lunak, serta pembuatan sistem yang fungsional dan terstruktur.
+                        </p>
+                        <p>
+                            Dalam pengembangan web, saya terbiasa menggunakan teknologi seperti HTML, CSS, JavaScript, PHP, MySQL, serta Supabase. Selain ngoding, saya juga memiliki standar estetika visual yang kuat—mulai dari tata letak antarmuka web hingga desain grafis dan diorama.
+                        </p>
+                    </div>
+
+                    <div class="bg-black p-6 rounded-xl border border-red-950 space-y-4">
+                        <h3 class="font-heading text-2xl font-bold uppercase text-white tracking-wider text-red-500">Informasi Ringkas</h3>
+                        <ul class="space-y-3 text-sm text-gray-400">
+                            <li><strong class="text-white block text-xs uppercase text-red-400">Status Akademik</strong> Mahasiswa S1 Teknik Informatika (UMC)</li>
+                            <li><strong class="text-white block text-xs uppercase text-red-400">Kelas / NIM</strong> TI24B / 240511007</li>
+                            <li><strong class="text-white block text-xs uppercase text-red-400">Domisili</strong> Cirebon, Jawa Barat, Indonesia</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-24 bg-[#0b0b0b]">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="mb-16">
+                    <span class="text-xs text-red-500 font-bold uppercase tracking-widest">Kompetensi</span>
+                    <h2 class="font-heading text-5xl md:text-6xl font-bold uppercase tracking-wider text-white mt-1">Keahlian <span class="text-red-600">Teknis</span></h2>
+                    <div class="w-20 h-1 bg-red-600 mt-2"></div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="p-6 rounded-xl bg-[#121212] border border-red-950 hover:border-red-600/50 transition">
+                        <h3 class="font-heading text-2xl font-bold text-white mb-2 uppercase text-red-500">Frontend Development</h3>
+                        <p class="text-sm text-gray-400 mb-4">Membangun antarmuka web yang responsif, interaktif, dan estetis.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2 py-1 bg-red-950/60 border border-red-800/40 text-red-300 text-xs rounded">HTML5 / CSS3</span>
+                            <span class="px-2 py-1 bg-red-950/60 border border-red-800/40 text-red-300 text-xs rounded">JavaScript</span>
+                            <span class="px-2 py-1 bg-red-950/60 border border-red-800/40 text-red-300 text-xs rounded">Tailwind CSS</span>
+                        </div>
+                    </div>
+
+                    <div class="p-6 rounded-xl bg-[#121212] border border-red-950 hover:border-red-600/50 transition">
+                        <h3 class="font-heading text-2xl font-bold text-white mb-2 uppercase text-red-500">Backend & Database</h3>
+                        <p class="text-sm text-gray-400 mb-4">Pengelolaan logika sisi server dan struktur basis data yang andal.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2 py-1 bg-red-950/60 border border-red-800/40 text-red-300 text-xs rounded">PHP (Native / XAMPP)</span>
+                            <span class="px-2 py-1 bg-red-950/60 border border-red-800/40 text-red-300 text-xs rounded">MySQL</span>
+                            <span class="px-2 py-1 bg-red-950/60 border border-red-800/40 text-red-300 text-xs rounded">Supabase</span>
+                        </div>
+                    </div>
+
+                    <div class="p-6 rounded-xl bg-[#121212] border border-red-950 hover:border-red-600/50 transition">
+                        <h3 class="font-heading text-2xl font-bold text-white mb-2 uppercase text-red-500">Tools & Workflow</h3>
+                        <p class="text-sm text-gray-400 mb-4">Perkakas pendukung pengembangan dan deployment aplikasi.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2 py-1 bg-red-950/60 border border-red-800/40 text-red-300 text-xs rounded">Git / GitHub Pages</span>
+                            <span class="px-2 py-1 bg-red-950/60 border border-red-800/40 text-red-300 text-xs rounded">VS Code</span>
+                            <span class="px-2 py-1 bg-red-950/60 border border-red-800/40 text-red-300 text-xs rounded">InfinityFree</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects / Collection Section -->
+        <section id="projects" class="py-24 bg-[#0d0d0d]">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="mb-16">
+                    <span class="text-xs text-red-500 font-bold uppercase tracking-widest">Portofolio Karya</span>
+                    <h2 class="font-heading text-5xl md:text-6xl font-bold uppercase tracking-wider text-white mt-1">Koleksi <span class="text-red-600">Proyek</span></h2>
+                    <div class="w-20 h-1 bg-red-600 mt-2"></div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-black border border-red-950 rounded-xl overflow-hidden group hover:border-red-600/60 transition flex flex-col justify-between">
+                        <div>
+                            <div class="h-48 bg-red-950/20 border-b border-red-950 flex items-center justify-center">
+                                <span class="font-heading text-2xl text-red-600/60 uppercase">Web App</span>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="font-heading text-2xl font-bold text-white mb-2">Sistem Informasi Sejarah Mobil</h3>
+                                <p class="text-gray-400 text-sm mb-4">Platform web interaktif JDM vehicles, pemutaran suara mesin, dan dashboard admin.</p>
+                            </div>
+                        </div>
+                        <div class="p-6 pt-0">
+                            <a href="#" class="text-sm font-bold text-red-500 hover:text-red-400 uppercase tracking-wider inline-flex items-center gap-1">Lihat Detail &rarr;</a>
+                        </div>
+                    </div>
+
+                    <div class="bg-black border border-red-950 rounded-xl overflow-hidden group hover:border-red-600/60 transition flex flex-col justify-between">
+                        <div>
+                            <div class="h-48 bg-red-950/20 border-b border-red-950 flex items-center justify-center">
+                                <span class="font-heading text-2xl text-red-600/60 uppercase">Academic Data</span>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="font-heading text-2xl font-bold text-white mb-2">Academic Attendance Manager</h3>
+                                <p class="text-gray-400 text-sm mb-4">Pengelolaan data absensi kelas TI24B ke dalam struktur basis data dan spreadsheet.</p>
+                            </div>
+                        </div>
+                        <div class="p-6 pt-0">
+                            <a href="#" class="text-sm font-bold text-red-500 hover:text-red-400 uppercase tracking-wider inline-flex items-center gap-1">Lihat Detail &rarr;</a>
+                        </div>
+                    </div>
+
+                    <div class="bg-black border border-red-950 rounded-xl overflow-hidden group hover:border-red-600/60 transition flex flex-col justify-between">
+                        <div>
+                            <div class="h-48 bg-red-950/20 border-b border-red-950 flex items-center justify-center">
+                                <span class="font-heading text-2xl text-red-600/60 uppercase">UI / Design</span>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="font-heading text-2xl font-bold text-white mb-2">Cyber-Theme Poster & Assets</h3>
+                                <p class="text-gray-400 text-sm mb-4">Desain poster presentasi akademik bertema tajam dengan integrasi QR Code.</p>
+                            </div>
+                        </div>
+                        <div class="p-6 pt-0">
+                            <a href="#" class="text-sm font-bold text-red-500 hover:text-red-400 uppercase tracking-wider inline-flex items-center gap-1">Lihat Detail &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="py-24 bg-[#0b0b0b]">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="mb-16">
+                    <span class="text-xs text-red-500 font-bold uppercase tracking-widest">Akademik</span>
+                    <h2 class="font-heading text-5xl md:text-6xl font-bold uppercase tracking-wider text-white mt-1">Pendidikan <span class="text-red-600">Saya</span></h2>
+                    <div class="w-20 h-1 bg-red-600 mt-2"></div>
+                </div>
+
+                <div class="max-w-3xl space-y-6">
+                    <div class="p-6 rounded-xl bg-[#121212] border border-red-950 flex flex-col md:flex-row justify-between items-start md:items-center">
+                        <div>
+                            <span class="text-xs text-red-500 font-bold uppercase">2024 - Sekarang</span>
+                            <h3 class="font-heading text-3xl font-bold text-white uppercase mt-1">Universitas Muhammadiyah Cirebon</h3>
+                            <p class="text-sm text-gray-400">S1 Teknik Informatika • Section TI24B (NIM: 240511007)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-24 bg-[#0d0d0d] border-t border-red-950/50">
+            <div class="max-w-3xl mx-auto px-6 text-center">
+                <span class="text-xs text-red-500 font-bold uppercase tracking-widest">Komunikasi</span>
+                <h2 class="font-heading text-5xl md:text-6xl font-bold uppercase tracking-wider text-white mt-1 mb-4">Hubungi <span class="text-red-600">Saya</span></h2>
+                <p class="text-gray-400 mb-8">Tertarik berkolaborasi atau mendiskusikan project menarik? Silakan kirimkan pesan melalui email.</p>
+                <a href="mailto:emailmu@example.com" class="inline-block px-10 py-4 bg-red-700 hover:bg-red-600 text-white font-bold uppercase tracking-wider rounded transition shadow-lg shadow-red-900/40">Kirim Email</a>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer class="py-8 bg-black border-t border-red-950/30 text-center text-xs text-gray-500">
-        <p>&copy; 2026 Marcell Febriano. Built with Dark Samurai Aesthetic for GitHub Pages.</p>
+        <p>&copy; 2026 Marcell Febriano. Dibangun dengan estetika Dark Samurai untuk GitHub Pages.</p>
     </footer>
 
 </body>
