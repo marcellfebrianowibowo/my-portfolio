@@ -50,7 +50,7 @@
                     </div>
                 </div>
                 
-                <!-- Bagian Foto Profil (Langsung memanggil profile.jpeg) -->
+                <!-- Bagian Foto Profil -->
                 <div class="relative flex justify-center">
                     <div class="w-full max-w-sm h-80 md:h-[400px] rounded-2xl bg-gradient-to-br from-red-900/30 to-black border border-red-800/40 overflow-hidden shadow-2xl relative group">
                         <img src="profile.jpeg" alt="Foto Profil Marcell Febriano Wibowo" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
@@ -144,6 +144,7 @@
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Project 1: Sistem Informasi Sejarah Mobil (Diberikan Tombol Pemicu Modal) -->
                     <div class="bg-black border border-red-950 rounded-xl overflow-hidden group hover:border-red-600/60 transition flex flex-col justify-between">
                         <div>
                             <div class="h-48 bg-red-950/20 border-b border-red-950 flex items-center justify-center">
@@ -155,7 +156,8 @@
                             </div>
                         </div>
                         <div class="p-6 pt-0">
-                            <a href="#" class="text-sm font-bold text-red-500 hover:text-red-400 uppercase tracking-wider inline-flex items-center gap-1">Lihat Detail &rarr;</a>
+                            <!-- Tombol untuk membuka popup detail proyek -->
+                            <button onclick="openModal()" class="text-sm font-bold text-red-500 hover:text-red-400 uppercase tracking-wider inline-flex items-center gap-1 cursor-pointer">Lihat Detail &rarr;</button>
                         </div>
                     </div>
 
@@ -170,7 +172,7 @@
                             </div>
                         </div>
                         <div class="p-6 pt-0">
-                            <a href="#" class="text-sm font-bold text-red-500 hover:text-red-400 uppercase tracking-wider inline-flex items-center gap-1">Lihat Detail &rarr;</a>
+                            <span class="text-xs text-gray-500 uppercase tracking-wider">Segera Hadir</span>
                         </div>
                     </div>
 
@@ -185,7 +187,7 @@
                             </div>
                         </div>
                         <div class="p-6 pt-0">
-                            <a href="#" class="text-sm font-bold text-red-500 hover:text-red-400 uppercase tracking-wider inline-flex items-center gap-1">Lihat Detail &rarr;</a>
+                            <span class="text-xs text-gray-500 uppercase tracking-wider">Segera Hadir</span>
                         </div>
                     </div>
                 </div>
@@ -221,7 +223,7 @@
             </div>
         </section>
 
-        <!-- Contact Section (Dengan Link IG & TikTok Kamu) -->
+        <!-- Contact Section -->
         <section id="contact" class="py-24 bg-[#0d0d0d] border-t border-red-950/50">
             <div class="max-w-3xl mx-auto px-6 text-center">
                 <span class="text-xs text-red-500 font-bold uppercase tracking-widest">Komunikasi</span>
@@ -245,6 +247,69 @@
     <footer class="py-8 bg-black border-t border-red-950/30 text-center text-xs text-gray-500">
         <p>&copy; 2026 Marcell Febriano Wibowo. Dibangun dengan estetika Dark Samurai untuk GitHub Pages.</p>
     </footer>
+
+    <!-- MODAL / POPUP DETAIL PROYEK (Disembunyikan secara default dengan 'hidden') -->
+    <div id="projectModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm hidden px-4">
+        <div class="bg-[#121212] border border-red-900/60 rounded-2xl max-w-xl w-full p-6 md:p-8 relative shadow-2xl animate-in fade-in zoom-in duration-200">
+            <!-- Tombol Close (X) -->
+            <button onclick="closeModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white text-2xl font-bold">&times;</button>
+            
+            <!-- Judul Proyek di Popup -->
+            <span class="text-xs text-red-500 font-bold uppercase tracking-widest">Detail Proyek Web App</span>
+            <h3 class="font-heading text-3xl md:text-4xl font-bold text-white uppercase mt-1 mb-4">Sistem Informasi Sejarah Mobil</h3>
+            
+            <!-- Penjelasan Proyek -->
+            <div class="space-y-4 text-gray-300 text-sm leading-relaxed mb-6">
+                <p>
+                    <strong>Apa proyek ini?</strong><br>
+                    Platform web interaktif yang merangkum sejarah perkembangan dunia otomotif, berfokus pada kendaraan JDM (Japanese Domestic Market) legendaris dengan fitur pemutaran suara mesin dan pengelolaan data melalui panel admin.
+                </p>
+                <p>
+                    <strong>Tujuan Dibuatnya:</strong><br>
+                    Bertujuan untuk menyediakan sumber informasi digital yang edukatif dan menarik bagi para pecinta otomotif, sekaligus mengimplementasikan keterampilan pengembangan web full-stack menggunakan HTML, CSS, JavaScript, dan Supabase.
+                </p>
+                <div>
+                    <strong class="text-xs text-red-400 uppercase block mb-1">Teknologi yang Digunakan:</strong>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-red-950/60 border border-red-800/40 text-red-300 text-xs rounded">HTML5 / CSS3</span>
+                        <span class="px-2 py-1 bg-red-950/60 border border-red-800/40 text-red-300 text-xs rounded">JavaScript</span>
+                        <span class="px-2 py-1 bg-red-950/60 border border-red-800/40 text-red-300 text-xs rounded">Supabase Database</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tombol Aksi: Kunjungi Web & Tutup -->
+            <div class="flex flex-wrap gap-4 pt-4 border-t border-red-950">
+                <!-- Ganti '#' dengan link web proyek aslimu jika sudah di-deploy -->
+                <a href="https://github.com/username-kamu/nama-repo-proyek" target="_blank" class="px-6 py-3 bg-red-700 hover:bg-red-600 text-white font-bold text-xs uppercase tracking-wider rounded transition shadow-md shadow-red-900/40 inline-flex items-center gap-2">
+                    Kunjungi Website Proyek &rarr;
+                </a>
+                <button onclick="closeModal()" class="px-6 py-3 border border-red-800/80 hover:bg-red-950/40 text-gray-300 font-bold text-xs uppercase tracking-wider rounded transition">
+                    Tutup
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script JavaScript Sederhana untuk Mengontrol Popup Modal -->
+    <script>
+        const modal = document.getElementById('projectModal');
+
+        function openModal() {
+            modal.classList.remove('hidden');
+        }
+
+        function closeModal() {
+            modal.classList.add('hidden');
+        }
+
+        // Menutup modal jika pengguna mengklik area di luar kotak popup
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                closeModal();
+            }
+        }
+    </script>
 
 </body>
 </html>
