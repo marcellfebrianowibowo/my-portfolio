@@ -1,0 +1,22 @@
+/* --- OPSIONAL: JIKA MAU PAKAI FONT DAFONT --- */
+/* 
+@font-face {
+    font-family: 'FontSamuraiCustom';
+    src: url('fonts/nama-font-dafont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+*/
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #0b0b0b;
+    color: #f3f3f3;
+}
+
+/* Pengaturan untuk judul besar agar bernuansa tajam/garang ala samurai */
+.font-heading {
+    /* Jika pakai font dafont, ganti 'Teko' dengan 'FontSamuraiCustom' */
+    font-family: 'Teko', sans-serif; 
+    letter-spacing: 1.5px;
+}
